@@ -1,28 +1,56 @@
-import { Link } from "react-router-dom";
-import wisuda from "../assets/img/wisuda.jpg";
+import f1 from "../assets/img/f1.png";
+import f2 from "../assets/img/f2.png";
+import f3 from "../assets/img/f3.png";
+import f4 from "../assets/img/f3.png";
 
 const Project = () => {
   return (
-    <div className="bg-gray-800 p-6 pt-24">
-      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 max-w-6xl mx-auto mt-6">
-        {/* Bagian Gambar */}
-        <div className="w-1/2 md:w-1/2 sm:w-1/3 h-auto rounded-full border-4 border-white overflow-hidden">
-          <img src={wisuda} alt="Profile" className="w-full h-full object-cover" />
+    <div className="bg-gray-800 pt-24">
+      <h3 className="text-white text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold">My Project</h3>
+      {/* Container */}
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto ">
+        {/* Project 1 */}
+        <div className="flex">
+          <div className="w-1/2">
+            <img src={f1} alt="Project 1" className="w-full h-full object-cover" />
+          </div>
+          <div className="text-white text-sm w-1/2 text-justify p-2">
+            <h4 className="font-bold">Project Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+          </div>
         </div>
 
-        {/* Bagian Teks */}
-        <div className="flex flex-col text-center sm:mt-0 sm:text-left">
-          <h3 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold">Project Me</h3>
-          <Link to="/about">
-            <button className="relative flex items-center justify-center gap-2 py-2 px-6 mt-4 rounded-lg text-white bg-transparent border border-white group hover:bg-orange-400 hover:pr-10 transition-all duration-300 ease-in-out">
-              {/* Teks */}
-              <span className="block transition-all duration-300 ease-in-out group-hover:mr-4">See Detail</span>
-              {/* Ikon Panah */}
-              <span className="absolute right-4 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:right-6">
-                <i className="fa fa-arrow-right"></i>
-              </span>
-            </button>
-          </Link>
+        {/* Project 2 */}
+        <div className="flex">
+          <div className="w-1/2">
+            <img src={f2} alt="Project 2" className="w-full h-full object-cover" />
+          </div>
+          <div className="text-white text-sm w-1/2 text-justify p-2">
+            <h4 className="font-bold">Project Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+          </div>
+        </div>
+
+        {/* Project 3 */}
+        <div className="flex">
+          <div className="text-white text-sm w-1/2 text-justify p-2">
+            <h4 className="font-bold">Project Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+          </div>
+          <div className="w-1/2">
+            <img src={f3} alt="Project 3" className="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        {/* Project 4 */}
+        <div className="flex">
+          <div className="text-white text-sm w-1/2 text-justify p-2">
+            <h4 className="font-bold">Project Name</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+          </div>
+          <div className="w-1/2">
+            <img src={f4} alt="Project 4" className="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
     </div>
