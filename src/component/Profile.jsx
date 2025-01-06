@@ -6,7 +6,7 @@ const Profile = () => {
     <div className="bg-gray-800 p-6 pt-24">
       <div className="flex flex-col sm:flex-row items-center justify-between max-w-6xl mx-auto">
         {/* Bagian Teks */}
-        <div className="flex flex-col max-w-2xl sm:mr-6">
+        <div className="flex flex-col max-w-2xl sm:mr-6 text-center sm:text-left">
           <p className="text-white text-1xl font-semibold">Muhammad Difa Rifaldi</p>
 
           <p className="text-orange-400 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold my-4 overflow-hidden whitespace-nowrap animate-typing">Web Developer</p>
@@ -23,7 +23,7 @@ const Profile = () => {
         </div>
 
         {/* Bagian Gambar */}
-        <div className="w-1/2 sm:w-1/3 md:w-1/4 h-auto rounded-full border-4 border-white overflow-hidden mt-6 sm:mt-0">
+        <div className="w-1/2 sm:w-1/3 md:w-1/4 h-auto rounded-full border-4 border-white overflow-hidden mt-6 sm:mt-0 mx-auto sm:mx-0">
           <img src={b3} alt="Profile" className="w-full h-full object-cover" />
         </div>
       </div>
