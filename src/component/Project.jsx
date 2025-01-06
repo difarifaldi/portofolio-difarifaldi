@@ -32,24 +32,24 @@ const Project = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="flex">
+        <div className="flex flex-row-reverse">
+          <div className="w-1/2">
+            <img src={f3} alt="Project 3" className="w-full h-full object-cover" />
+          </div>
           <div className="text-white text-sm w-1/2 text-justify p-2">
             <h4 className="font-bold">Project Name</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
-          </div>
-          <div className="w-1/2">
-            <img src={f3} alt="Project 3" className="w-full h-full object-cover" />
           </div>
         </div>
 
         {/* Project 4 */}
-        <div className="flex">
+        <div className="flex flex-row-reverse">
+          <div className="w-1/2">
+            <img src={f4} alt="Project 4" className="w-full h-full object-cover" />
+          </div>
           <div className="text-white text-sm w-1/2 text-justify p-2">
             <h4 className="font-bold">Project Name</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
-          </div>
-          <div className="w-1/2">
-            <img src={f4} alt="Project 4" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
