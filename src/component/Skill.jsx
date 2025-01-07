@@ -65,6 +65,9 @@ const Skill = () => {
               Jupyter Notebook <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
+              Android Studio <span className="text-orange-400 font-bold">|</span>
+            </div>
+            <div className="m-1">
               Git <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
