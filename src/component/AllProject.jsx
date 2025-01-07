@@ -30,8 +30,10 @@ const AllProject = () => {
       {/* Grid Proyek */}
       <div className="grid grid-cols-1 justify-center sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="group relative cursor-pointer" onClick={() => handleProjectClick(project.id)}>
-            <img src={project.image} alt={project.title} className="w-full h-full" />
+          <div key={index} className="group relative cursor-pointer flex flex-col  h-full min-h-[300px]" onClick={() => handleProjectClick(project.id)}>
+            <div className="relative flex-grow">
+              <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+            </div>
             <div className="absolute inset-0 flex p-4 items-center justify-center bg-gray-950 bg-opacity-70 opacity-100 group-hover:opacity-0 transition duration-300">
               <div className="absolute top-0 left-0 bg-orange-500 rounded-br-lg px-1">
                 <p className="text-white font-bold m-2">{project.year}</p>
@@ -41,10 +43,10 @@ const AllProject = () => {
                 <p className="text-white font-bold">{project.description}</p>
                 <div className="relative flex flex-wrap mt-3 justify-center">
                   {project.technologies.map((tech, idx) => {
-                    // Tentukan ukuran font berdasarkan panjang teks
-                    const textSize = tech.length > 10 ? "text-sm" : "text-md"; // Ubah logika ini sesuai kebutuhan
+                    // Tentukan ukuran font berdasarkan panjang teks dan tampilan layar
+                    const textSize = tech.length > 10 ? "text-sm" : "text-base"; // Logika berdasarkan panjang teks
                     return (
-                      <div key={idx} className={`bg-gray-300 rounded-lg px-2 py-2 m-2 font-bold  ${textSize}`}>
+                      <div key={idx} className={`bg-gray-300 rounded-lg md:px-3 md:py-2 px-2 py-1 m-1 font-bold ${textSize} sm:px-2 sm:py-1`}>
                         {tech}
                       </div>
                     );
