@@ -2,6 +2,7 @@ import Profile from "./Profile";
 import About from "./About";
 import Sidebar from "./Sidebar";
 import Project from "./Project";
+import Contact from "./Contact";
 
 function Utama() {
   return (
@@ -10,6 +11,7 @@ function Utama() {
       <Profile />
       <About />
       <Project />
+      <Contact />
     </>
   );
 }

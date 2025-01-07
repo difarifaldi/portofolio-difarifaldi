@@ -33,6 +33,9 @@ const AllProject = () => {
           <div key={index} className="group relative cursor-pointer" onClick={() => handleProjectClick(project.id)}>
             <img src={project.image} alt={project.title} className="w-full h-full" />
             <div className="absolute inset-0 flex p-4 items-center justify-center bg-gray-950 bg-opacity-70 opacity-100 group-hover:opacity-0 transition duration-300">
+              <div className="absolute top-0 left-0 bg-orange-500 rounded-br-lg px-1">
+                <p className="text-white font-bold m-2">{project.year}</p>
+              </div>
               <div className="text-center">
                 <p className="text-white md:text-2xl font-extrabold">{project.title}</p>
                 <p className="text-white font-bold">{project.description}</p>
