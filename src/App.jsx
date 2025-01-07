@@ -15,6 +15,8 @@ function App() {
 
         {/* Route untuk halaman detail */}
         <Route path="/about" element={<Detail />} />
+
+        {/* Route untuk halaman detail project */}
         <Route path="/detail-project" element={<DetailProject />} />
       </Routes>
     </Router>
