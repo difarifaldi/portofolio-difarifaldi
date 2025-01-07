@@ -3,6 +3,7 @@ import Navbar from "./component/Navbar";
 import Utama from "./component/Utama";
 
 import Detail from "./component/Detail";
+import DetailProject from "./component/DetailProject";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 
         {/* Route untuk halaman detail */}
         <Route path="/about" element={<Detail />} />
+        <Route path="/detail-project" element={<DetailProject />} />
       </Routes>
     </Router>
   );
