@@ -1,62 +1,17 @@
 import { useState } from "react";
-import f4 from "../assets/img/f3.png";
+import { useNavigate } from "react-router-dom";
+import { projects } from "../data/ProjectData";
 
-const projects = [
-  {
-    title: "Customer LPG Pertamina",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.",
-    technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "AJAX"],
-    image: f4,
-    category: "Web Development",
-  },
-  {
-    title: "Brata Cerdas",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.",
-    technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "AJAX", "Google OAuth", "Google Analytics"],
-    image: f4,
-    category: "Web Development",
-  },
-  {
-    title: "Asset Management",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.",
-    technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "AJAX"],
-    image: f4,
-    category: "Web Development",
-  },
-  {
-    title: "SIAMI",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.",
-    technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth"],
-    image: f4,
-    category: "Web Development",
-  },
-  {
-    title: "Monitoring DC",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.",
-    technologies: ["Codeigniter", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth", "SSO"],
-    image: f4,
-    category: "Web Development",
-  },
-  {
-    title: "Peminjaman Ruang",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.",
-    technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery"],
-    image: f4,
-    category: "Web Development",
-  },
-  {
-    title: "Predictive Maintenance",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.",
-    technologies: ["Data Preprocessing", "Data Training", "Undersampled Data", " Optuna Optimization", "SVM", "KNN", "Random Forest", "Roc Curves"],
-    image: f4,
-    category: "Other",
-  },
-];
 const AllProject = () => {
   const [selectedCategory, setSelectedCategory] = useState("Web Development");
+  const navigate = useNavigate();
 
   // Filter proyek berdasarkan kategori
   const filteredProjects = projects.filter((project) => project.category === selectedCategory);
+
+  const handleProjectClick = (id) => {
+    navigate(`/project/${id}`); // Mengarahkan ke halaman detail proyek
+  };
 
   return (
     <div className="bg-gray-800 p-6 pt-24">
@@ -75,7 +30,7 @@ const AllProject = () => {
       {/* Grid Proyek */}
       <div className="grid grid-cols-1 justify-center sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="group relative cursor-pointer">
+          <div key={index} className="group relative cursor-pointer" onClick={() => handleProjectClick(project.id)}>
             <img src={project.image} alt={project.title} className="w-full h-full" />
             <div className="absolute inset-0 flex p-4 items-center justify-center bg-gray-950 bg-opacity-70 opacity-100 group-hover:opacity-0 transition duration-300">
               <div className="text-center">

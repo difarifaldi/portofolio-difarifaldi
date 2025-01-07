@@ -4,6 +4,8 @@ import Utama from "./component/Utama";
 
 import Detail from "./component/Detail";
 import DetailProject from "./component/DetailProject";
+import ShowProject from "./component/ShowProject";
+import { projects } from "./data/ProjectData";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
 
         {/* Route untuk halaman detail project */}
         <Route path="/detail-project" element={<DetailProject />} />
+
+        <Route path="/project/:id" element={<ShowProject projects={projects} />} />
       </Routes>
     </Router>
   );
