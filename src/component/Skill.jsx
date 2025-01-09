@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
+
 const Skill = () => {
   return (
     <div className="bg-gray-800 p-6 pt-20">
-      <p className="text-white text-center  text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">SKILL</p>
+      <p className="text-white text-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">SKILL</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6">
-        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white text-center" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+        <motion.div
+          className="bg-gray-700 p-6 rounded-lg shadow-lg text-white text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }} // Delay agar muncul setelah beberapa waktu
+        >
           <h3 className="text-2xl font-bold">FRAMEWORK & LANGUAGE</h3>
           <div className="relative justify-center flex flex-wrap mt-3">
             <div className="m-1 ">
@@ -50,7 +56,12 @@ const Skill = () => {
           </div>
         </motion.div>
 
-        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white text-center" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+        <motion.div
+          className="bg-gray-700 p-6 rounded-lg shadow-lg text-white text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }} // Penundaan sedikit lebih lama untuk elemen kedua
+        >
           <h3 className="text-2xl font-bold">TOOLS</h3>
           <div className="relative justify-center flex flex-wrap mt-3">
             <div className="m-1">

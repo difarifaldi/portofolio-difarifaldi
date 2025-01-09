@@ -25,7 +25,7 @@ const Organization = () => {
     <div className="bg-gray-800 p-6 pt-24">
       <p className="text-white text-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">ORGANIZATION</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6">
-        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }}>
           <h3 className="text-2xl font-bold">Departemen Kerohanian - HIMATIK</h3>
           <p className="text-sm mt-2">2021</p>
           <p className="text-sm mt-2 text-justify">
@@ -33,7 +33,7 @@ const Organization = () => {
           </p>
         </motion.div>
 
-        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.4 }} viewport={{ once: false }}>
           <h3 className="text-2xl font-bold">Komunitas Android</h3>
           <p className="text-sm mt-2">2019</p>
           <p className="text-sm mt-2 text-justify">
@@ -43,7 +43,7 @@ const Organization = () => {
       </div>
 
       {/* Image Slider */}
-      <motion.div className="mt-12 flex justify-center" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
+      <motion.div className="mt-12 flex justify-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }}>
         <div className="w-full max-w-4xl bg-gray-700 p-6 rounded-lg shadow-lg">
           <Swiper
             slidesPerView={1}
