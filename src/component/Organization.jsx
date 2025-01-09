@@ -4,6 +4,7 @@ import "swiper/css"; // Import gaya dasar Swiper
 import "swiper/css/pagination"; // Import gaya untuk pagination (opsional)
 import "swiper/css/navigation"; // Import gaya untuk navigasi (opsional)
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 import wisuda from "../assets/img/wisuda.jpg";
 import b3 from "../assets/img/1.jpeg";
 
@@ -24,25 +25,25 @@ const Organization = () => {
     <div className="bg-gray-800 p-6 pt-24">
       <p className="text-white text-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">ORGANIZATION</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6">
-        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white">
+        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <h3 className="text-2xl font-bold">Departemen Kerohanian - HIMATIK</h3>
           <p className="text-sm mt-2">2021</p>
           <p className="text-sm mt-2 text-justify">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas? Doloribus similique non dicta cum iure eaque ratione tempora, saepe est in.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white">
+        <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <h3 className="text-2xl font-bold">Komunitas Android</h3>
           <p className="text-sm mt-2">2019</p>
           <p className="text-sm mt-2 text-justify">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas? Doloribus similique non dicta cum iure eaque ratione tempora, saepe est in.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Image Slider */}
-      <div className="mt-12 flex justify-center">
+      <motion.div className="mt-12 flex justify-center" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
         <div className="w-full max-w-4xl bg-gray-700 p-6 rounded-lg shadow-lg">
           <Swiper
             slidesPerView={1}
@@ -82,7 +83,7 @@ const Organization = () => {
             <div className="swiper-button-prev"></div>
           </Swiper>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

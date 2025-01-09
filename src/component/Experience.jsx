@@ -41,9 +41,10 @@ const Experience = () => {
         {experienceItems.map((experience, index) => (
           <motion.div
             key={index}
+            whileInView={{ opacity: 1, x: 0 }} // Ketika elemen muncul di layar
             initial={{ opacity: 0, x: -100 }} // Efek awal: tersembunyi di sebelah kiri
-            animate={{ opacity: 1, x: 0 }} // Efek selesai: muncul dengan posisi normal
-            transition={{ delay: index * 0.3, duration: 0.6 }} // Setiap experience muncul satu per satu dengan delay
+            transition={{ delay: index * 0.3, duration: 0.6 }} // Durasi animasi
+            viewport={{ once: false, amount: 0.25 }} // Triggers ketika elemen 25% terlihat di layar
           >
             <div className="relative flex py-6 text-white">
               {/* Roadmap Point */}
