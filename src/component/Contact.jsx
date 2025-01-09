@@ -2,7 +2,7 @@ import wisuda from "../assets/img/wisuda.jpg";
 
 const Contact = () => {
   return (
-    <div className="bg-gray-800 p-6 pt-24">
+    <div className="bg-gray-800 p-6 pt-24" id="contact">
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-6">
         {/* Bagian Teks */}
         <div className="flex flex-col max-w-2xl md:mr-0 sm:mr-6 text-center sm:text-left">
