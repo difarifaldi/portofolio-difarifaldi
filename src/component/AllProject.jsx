@@ -32,7 +32,7 @@ const AllProject = () => {
       <motion.div
         className="grid grid-cols-1 justify-center sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6"
         initial={{ opacity: 0, y: 50 }} // Animasi awal: redup dan bergeser ke bawah
-        animate={{ opacity: 1, y: 0 }} // Animasi muncul: penuh dan posisi normal
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }} // Durasi animasi
       >
         {filteredProjects.map((project, index) => (
