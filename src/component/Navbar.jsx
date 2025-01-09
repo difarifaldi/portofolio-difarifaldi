@@ -4,8 +4,11 @@ import { useLocation, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation(); // Mengambil lokasi saat ini
+  const location = useLocation(); // Mendapatkan path saat ini
   const navigate = useNavigate(); // Untuk navigasi antar halaman
+
+  const isProjectDetail = location.pathname.startsWith("/project/");
+  const isHome = location.pathname === "/";
 
   // Fungsi untuk mendeteksi scroll
   useEffect(() => {
@@ -28,10 +31,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            {/* Tampilkan tombol "<" hanya jika bukan di halaman utama */}
-            {location.pathname !== "/" && (
+            {/* Tampilkan tombol navigasi jika bukan di halaman utama */}
+            {!isHome && (
               <button
-                onClick={() => navigate("/")} // Navigasi ke halaman utama
+                onClick={() => navigate(isProjectDetail ? "/detail-project" : "/")} // Navigasi berdasarkan kondisi
                 className="text-white font-bold text-xl flex items-center space-x-2"
               >
                 <span className="text-xs">
@@ -40,7 +43,8 @@ const Navbar = () => {
                 <span>Difarifaldi</span>
               </button>
             )}
-            {location.pathname === "/" && <span className="font-bold text-xl text-white">Difarifaldi</span>}
+            {/* Tampilkan teks jika berada di halaman utama */}
+            {isHome && <span className="font-bold text-xl text-white">Difarifaldi</span>}
           </div>
           <div className="hidden md:flex space-x-4">
             <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
