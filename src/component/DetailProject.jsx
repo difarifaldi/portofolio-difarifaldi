@@ -4,8 +4,10 @@ import OverviewProject from "./OverviewProject";
 
 const DetailProject = () => {
   useEffect(() => {
-    // Menggulirkan halaman ke atas saat komponen Detail dimuat
-    window.scrollTo(0, 0);
+    // Menunggu 0ms agar halaman dapat sepenuhnya dirender
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   }, []);
   return (
     <>
