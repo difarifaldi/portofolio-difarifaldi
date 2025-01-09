@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import wisuda from "../assets/img/wisuda.jpg";
+import wisuda2 from "../assets/img/wisuda2.jpg";
 
 const Education = () => {
   return (
@@ -8,7 +8,7 @@ const Education = () => {
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 max-w-6xl mx-auto mt-6">
         {/* Bagian Gambar */}
         <motion.div className="w-1/2 md:w-1/2 sm:w-1/3 h-auto rounded-full border-4 border-white overflow-hidden" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-          <img src={wisuda} alt="Profile" className="w-full h-full object-cover" />
+          <img src={wisuda2} alt="Profile" className="w-full h-full object-cover" />
         </motion.div>
 
         {/* Bagian Teks */}
