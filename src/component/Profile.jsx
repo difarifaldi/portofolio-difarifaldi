@@ -3,7 +3,7 @@ import cv from "../assets/file/cv.pdf";
 
 const Profile = () => {
   return (
-    <div className="bg-gray-800 p-6 pt-24">
+    <div className="bg-gray-800 p-6 pt-24" id="profile">
       <div className="flex flex-col sm:flex-row items-center justify-between max-w-6xl mx-auto">
         {/* Bagian Teks */}
         <div className="flex flex-col max-w-2xl sm:mr-6 text-center sm:text-left">

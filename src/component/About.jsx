@@ -3,7 +3,7 @@ import wisuda from "../assets/img/wisuda.jpg";
 
 const About = () => {
   return (
-    <div className="bg-gray-800 p-6 pt-24">
+    <div className="bg-gray-800 p-6 pt-24" id="about">
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 max-w-6xl mx-auto mt-6">
         {/* Bagian Gambar */}
         <div className="w-1/2 md:w-1/2 sm:w-1/3 h-auto rounded-full border-4 border-white overflow-hidden">

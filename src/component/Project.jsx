@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import f1 from "../assets/img/f1.png";
-import f2 from "../assets/img/f2.png";
-import f3 from "../assets/img/f3.png";
-import f4 from "../assets/img/f3.png";
+import f1 from "../assets/img/pinjam.png";
+import f2 from "../assets/img/bps.png";
+import f3 from "../assets/img/siami.png";
+import f4 from "../assets/img/bc.png";
 
 const Project = () => {
   return (
-    <div className="bg-gray-800 pt-24">
+    <div className="bg-gray-800 pt-24" id="project">
       <h3 className="text-white text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold">My Project</h3>
       {/* Container */}
       <Link to="/detail-project">
@@ -19,7 +19,7 @@ const Project = () => {
               <img src={f1} alt="Project 1" className="w-full h-full object-cover" />
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
-              <h4 className="font-bold">Project Name</h4>
+              <h4 className="font-bold">Sistem Peminjaman Ruang</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
             </div>
           </div>
@@ -30,7 +30,7 @@ const Project = () => {
               <img src={f2} alt="Project 2" className="w-full h-full object-cover" />
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
-              <h4 className="font-bold">Project Name</h4>
+              <h4 className="font-bold">Monitoring DC</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Project = () => {
               <img src={f3} alt="Project 3" className="w-full h-full object-cover" />
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
-              <h4 className="font-bold">Project Name</h4>
+              <h4 className="font-bold">SIAMI</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Project = () => {
               <img src={f4} alt="Project 4" className="w-full h-full object-cover" />
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
-              <h4 className="font-bold">Project Name</h4>
+              <h4 className="font-bold">Brata Cerdas</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
             </div>
           </div>
