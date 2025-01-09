@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import wisuda from "../assets/img/wisuda.jpg";
+import wisuda from "../assets/img/code.jpeg";
 
 const Contact = () => {
   return (

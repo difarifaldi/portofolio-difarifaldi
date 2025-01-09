@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import b3 from "../assets/img/1.jpeg";
+import b3 from "../assets/img/fotojas.jpg";
 import cv from "../assets/file/cv.pdf";
 
 const Profile = () => {
