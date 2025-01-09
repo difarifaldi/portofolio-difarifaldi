@@ -20,8 +20,8 @@ const Project = () => {
               <img src={f1} alt="Project 1" className="w-full h-full object-cover" />
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
-              <h4 className="font-bold">Sistem Peminjaman Ruang</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+              <h4 className="font-bold">Room Booking System</h4>
+              <p>This website is a room borrowing system designed for the Accounting Department of Politeknik Negeri Jakarta to assist its academic community in managing room borrowing processes effectively.</p>
             </div>
           </div>
 
@@ -32,7 +32,10 @@ const Project = () => {
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
               <h4 className="font-bold">Monitoring DC</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+              <p>
+                The Data Center Monitoring System is used to monitor the data center at Statistics Indonesia (BPS RI), detecting data anomalies, facilitating the recording of malfunctioning equipment or anomalies, and presenting the data in
+                graphical format.
+              </p>
             </div>
           </div>
 
@@ -43,7 +46,7 @@ const Project = () => {
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
               <h4 className="font-bold">SIAMI</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+              <p>SIAMI is a website designed to assist in the implementation of internal quality audits at Politeknik Negeri Jakarta, enhancing effectiveness and efficiency by saving time in report generation and centralizing data.</p>
             </div>
           </div>
 
@@ -54,7 +57,10 @@ const Project = () => {
             </div>
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
               <h4 className="font-bold">Brata Cerdas</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas.</p>
+              <p>
+                Brata Cerdas is a website developed for the Traffic Corps of the Indonesian National Police (Korlantas Polri), designed as a learning platform for prospective and current police officers. The website features classes hosted
+                by instructors and a variety of tests for training purposes.
+              </p>
             </div>
           </div>
         </motion.div>

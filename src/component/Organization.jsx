@@ -28,17 +28,13 @@ const Organization = () => {
         <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }}>
           <h3 className="text-2xl font-bold">Departemen Kerohanian - HIMATIK</h3>
           <p className="text-sm mt-2">2021</p>
-          <p className="text-sm mt-2 text-justify">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas? Doloribus similique non dicta cum iure eaque ratione tempora, saepe est in.
-          </p>
+          <p className="text-sm mt-2 text-justify">Responsible for producing weekly lecture video content, managing necessary equipment, and coordinating with the team to conduct on-site video shoots at the speakers&apos; locations.</p>
         </motion.div>
 
         <motion.div className="bg-gray-700 p-6 rounded-lg shadow-lg text-white" initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.4 }} viewport={{ once: false }}>
           <h3 className="text-2xl font-bold">Komunitas Android</h3>
           <p className="text-sm mt-2">2019</p>
-          <p className="text-sm mt-2 text-justify">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aut dolorem quis totam, veritatis laborum omnis explicabo quas? Doloribus similique non dicta cum iure eaque ratione tempora, saepe est in.
-          </p>
+          <p className="text-sm mt-2 text-justify">Participated in weekly community activities to learn and develop Android-based applications using the Java programming language and Android Studio tools.</p>
         </motion.div>
       </div>
 

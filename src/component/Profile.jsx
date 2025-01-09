@@ -12,10 +12,7 @@ const Profile = () => {
 
           <p className="text-orange-400 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold my-4 overflow-hidden whitespace-nowrap animate-typing">Web Developer</p>
 
-          <p className="text-white">
-            memiliki motivasi tinggi, kemampuan bekerja sama dalam tim, serta mudah beradaptasi di lingkungan baru. Saya tertarik untuk terus mengembangkan keterampilan di bidang IT, khususnya sebagai frontend developer, backend developer,
-            web developer, dan UI/UX designer
-          </p>
+          <p className="text-white">Highly motivated, collaborative, and adaptable. Passionate about continuously enhancing skills in IT, particularly as a frontend and backend developer, web developer, and UI/UX designer</p>
           <a href={cv} download>
             <button className="border py-1 px-4 mt-4 rounded-lg hover:bg-orange-400 text-white">
               <i className="fa fa-file-download mr-2"></i>Download CV

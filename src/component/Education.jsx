@@ -15,20 +15,20 @@ const Education = () => {
         <motion.div className="flex flex-col text-center sm:mt-0 sm:text-left " initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.11 }} viewport={{ once: false }}>
           {/* SMA */}
           <motion.div className="bg-orange-400 rounded-lg p-4 mb-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: false }}>
-            <h3 className="font-bold text-white md:text-lg">SMA IPA, SMA Negeri 8 Depok</h3>
-            <p className="text-white">Nilai Rata-rata: 88.40</p>
+            <h3 className="font-bold text-white md:text-lg">Senior High School Science, SMA Negeri 8 Depok</h3>
+            <p className="text-white">Average Score: 88.40</p>
           </motion.div>
 
           {/* D2 */}
           <motion.div className="bg-orange-400 rounded-lg p-4 mb-4 ml-0 sm:ml-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }} viewport={{ once: false }}>
             <h3 className="font-bold text-white md:text-lg">D2 Software Engineer, CEP-CCIT FT Universitas Indonesia</h3>
-            <p className="text-white">IPK: 3.4</p>
+            <p className="text-white">GPA: 3.38</p>
           </motion.div>
 
           {/* D4 */}
           <motion.div className="bg-orange-400 rounded-lg p-4 ml-0 sm:ml-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.7 }} viewport={{ once: false }}>
-            <h3 className="font-bold text-white md:text-lg">D4 Teknik Informatika, Politeknik Negeri Jakarta</h3>
-            <p className="text-white">IPK: 3.4</p>
+            <h3 className="font-bold text-white md:text-lg">D4 Informatics Engineering, Politeknik Negeri Jakarta</h3>
+            <p className="text-white">GPA: 3.62</p>
           </motion.div>
         </motion.div>
       </div>

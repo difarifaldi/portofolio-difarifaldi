@@ -3,33 +3,33 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experienceItems = [
     {
-      title: "PT. ATLAS KAPITA PERKASA",
+      title: "PT. ATLAS KAPITA PERKASA | FULLTIME",
       period: "NOVEMBER 2024 - PRESENT",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+      description: "Developed the Bratacerdas website, designed for tutoring tests provided by the Traffic Corps of the Indonesian National Police (Korlantas Polri) for the general public",
       skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth", "Google Analytics", "cPanel"],
     },
     {
-      title: "UNIT PEMJAMINAN MUTU - POLITEKNIK NEGERI JAKARTA",
+      title: "UNIT PEMJAMINAN MUTU - POLITEKNIK NEGERI JAKARTA | REMOTE",
       period: "JULY 2024 - PRESENT",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+      description: "Designed system mockups, developed the SIAMI system to support internal quality audits at Politeknik Negeri Jakarta, and ensured its maintenance for optimal performance.",
       skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth"],
     },
     {
       title: "FREELANCE",
       period: "JULY 2024 - PRESENT",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+      description: "Developed and maintained web-based systems tailored to client needs, ensuring functionality, user-friendly interfaces, and scalability",
       skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery"],
     },
     {
-      title: "BADAN PUSAT STATISTIK RI",
+      title: "BADAN PUSAT STATISTIK RI | INTERNSHIP",
       period: "AUGUST 2023 - NOVEMBER 2023",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+      description: "Developed a data center monitoring system for the JKD Division of Statistics Indonesia (BPS RI) and assisted in monitoring equipment within the data center.",
       skills: ["Codeigniter", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth", "SSO", "cPanel"],
     },
     {
-      title: "JURUSAN AKUNTANSI - POLITEKNIK NEGERI JAKARTA",
+      title: "JURUSAN AKUNTANSI - POLITEKNIK NEGERI JAKARTA | PROJECT-BASED",
       period: "APRIL 2023 - JUNE 2023",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+      description: "Designed process workflows, created mockups, and developed a room borrowing system for the Accounting Department to improve the efficiency of the borrowing process",
       skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery"],
     },
   ];
@@ -43,7 +43,7 @@ const Experience = () => {
             key={index}
             whileInView={{ opacity: 1 }} // Efek saat elemen terlihat di layar
             initial={{ opacity: 0 }} // Efek awal: tersembunyi
-            transition={{ delay: index * 0.3, duration: 0.6 }} // Durasi animasi dan delay berdasarkan urutan
+            transition={{ delay: index * 0.2, duration: 0.4 }} // Durasi animasi dan delay berdasarkan urutan
             viewport={{ once: false, amount: 0.25 }} // Triggers ketika elemen 25% terlihat di layar
           >
             <div className="relative flex py-6 text-white">

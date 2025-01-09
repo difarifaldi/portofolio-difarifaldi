@@ -1,5 +1,8 @@
 import arrow from "../assets/img/nj.png";
 import { motion } from "framer-motion";
+import jwd from "../assets/file/jwd.pdf";
+import wd from "../assets/file/wd.pdf";
+import niit from "../assets/file/niit.pdf";
 
 const License = () => {
   return (
@@ -20,19 +23,19 @@ const License = () => {
               icon: "fa-laptop-code",
               title: "Software Engineering (Java Technologies)",
               subtitle: "DNIIT",
-              file: "/path-to-file/software-engineering.pdf",
+              file: niit,
             },
             {
               icon: "fa-globe",
               title: "Junior Web Developer",
               subtitle: "Badan Nasional Sertifikasi Profesi",
-              file: "/path-to-file/junior-web-developer.pdf",
+              file: jwd,
             },
             {
               icon: "fa-globe",
               title: "Web Developer",
               subtitle: "Badan Nasional Sertifikasi Profesi",
-              file: "/path-to-file/web-developer.pdf",
+              file: wd,
             },
           ].map((item, index) => (
             <motion.div
