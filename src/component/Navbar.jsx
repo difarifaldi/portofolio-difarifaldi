@@ -46,11 +46,6 @@ const Navbar = () => {
             {/* Tampilkan teks jika berada di halaman utama */}
             {isHome && <span className="font-bold text-xl text-white">Difarifaldi</span>}
           </div>
-          <div className="hidden md:flex space-x-4">
-            <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </div>
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} type="button" className="text-gray-300 hover:text-white focus:outline-none focus:text-white">
               <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
