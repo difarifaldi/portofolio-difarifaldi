@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { projects } from "../data/ProjectData";
+import { motion } from "framer-motion";
 
 const AllProject = () => {
   const [selectedCategory, setSelectedCategory] = useState("Web Development");
@@ -28,9 +29,14 @@ const AllProject = () => {
       </div>
 
       {/* Grid Proyek */}
-      <div className="grid grid-cols-1 justify-center sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6">
+      <motion.div
+        className="grid grid-cols-1 justify-center sm:grid-cols-2 gap-6 max-w-6xl mx-auto mt-6"
+        initial={{ opacity: 0, y: 50 }} // Animasi awal: redup dan bergeser ke bawah
+        animate={{ opacity: 1, y: 0 }} // Animasi muncul: penuh dan posisi normal
+        transition={{ duration: 1, ease: "easeOut" }} // Durasi animasi
+      >
         {filteredProjects.map((project, index) => (
-          <div key={index} className="group relative cursor-pointer flex flex-col  h-full min-h-[300px]" onClick={() => handleProjectClick(project.id)}>
+          <motion.div key={index} className="group relative cursor-pointer flex flex-col  h-full min-h-[300px]" onClick={() => handleProjectClick(project.id)} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
             <div className="relative flex-grow">
               <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
             </div>
@@ -54,9 +60,9 @@ const AllProject = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

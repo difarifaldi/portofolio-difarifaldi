@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import wisuda from "../assets/img/wisuda.jpg";
 
 const Contact = () => {
@@ -5,7 +6,7 @@ const Contact = () => {
     <div className="bg-gray-800 p-6 pt-24" id="contact">
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6 max-w-6xl mx-auto mt-6">
         {/* Bagian Teks */}
-        <div className="flex flex-col max-w-2xl md:mr-0 sm:mr-6 text-center sm:text-left">
+        <motion.div className="flex flex-col max-w-2xl md:mr-0 sm:mr-6 text-center sm:text-left" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <p className="text-white text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Get In Touch</p>
           <p className="text-white">Memiliki motivasi tinggi, kemampuan bekerja sama dalam tim, serta mudah beradaptasi di lingkungan baru.</p>
           <div className="flex flex-wrap gap-4 mt-4">
@@ -31,11 +32,11 @@ const Contact = () => {
               </div>
             </a>
           </div>
-        </div>
+        </motion.div>
         {/* Bagian Gambar */}
-        <div className="w-1/2 md:w-1/2 sm:w-1/3 h-auto border-4 border-white overflow-hidden">
+        <motion.div className="w-1/2 md:w-1/2 sm:w-1/3 h-auto border-4 border-white overflow-hidden" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <img src={wisuda} alt="Profile" className="w-full h-full object-cover" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
