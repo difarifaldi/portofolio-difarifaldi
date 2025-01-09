@@ -41,9 +41,9 @@ const Experience = () => {
         {experienceItems.map((experience, index) => (
           <motion.div
             key={index}
-            whileInView={{ opacity: 1, x: 0 }} // Ketika elemen muncul di layar
-            initial={{ opacity: 0, x: -100 }} // Efek awal: tersembunyi di sebelah kiri
-            transition={{ delay: index * 0.3, duration: 0.6 }} // Durasi animasi
+            whileInView={{ opacity: 1 }} // Efek saat elemen terlihat di layar
+            initial={{ opacity: 0 }} // Efek awal: tersembunyi
+            transition={{ duration: 0.6 }} // Durasi animasi dan delay berdasarkan urutan
             viewport={{ once: false, amount: 0.25 }} // Triggers ketika elemen 25% terlihat di layar
           >
             <div className="relative flex py-6 text-white">
