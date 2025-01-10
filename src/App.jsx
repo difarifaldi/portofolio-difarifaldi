@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Utama from "./component/Utama";
-
 import Detail from "./component/Detail";
 import DetailProject from "./component/DetailProject";
 import ShowProject from "./component/ShowProject";
@@ -9,7 +8,9 @@ import { projects } from "./data/ProjectData";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portofolio-react">
+      {" "}
+      {/* Tentukan basename */}
       <Navbar />
       <Routes>
         {/* Route untuk halaman utama */}
