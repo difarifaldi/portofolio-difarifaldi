@@ -8,7 +8,7 @@ import { projects } from "./data/ProjectData";
 
 function App() {
   return (
-    <Router basename="/portofolio-react">
+    <Router basename="/portofolio-difarifaldi">
       {" "}
       {/* Tentukan basename */}
       <Navbar />
