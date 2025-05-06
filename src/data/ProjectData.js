@@ -42,10 +42,10 @@ export const projects = [
   {
     id: 2,
     title: "Brata Cerdas",
-    description: "A website featuring a list of tests provided by Korlantas Polri for tutoring purposes.",
+    description: "An educational website offering tests and classes to prepare for Polri, ASN, and TNI entrance exams.",
     full_description:
-      "Brata Cerdas is an educational platform developed for the Traffic Corps of the Indonesian National Police (Korlantas Polri), aimed at providing a comprehensive learning environment for both prospective and current police officers. The website offers a range of classes conducted by experienced instructors, as well as various types of tests designed to enhance the knowledge and skills of users. It serves as a valuable tool for individuals preparing for police entrance exams or seeking to improve their professional competencies within the police force.",
-    technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "AJAX", "Google OAuth", "Google Analytics"],
+      "Brata Cerdas is an educational platform designed to provide a comprehensive learning environment for individuals preparing for careers in the Indonesian National Police, civil service, and the military. The website offers a range of classes led by experienced instructors, along with various types of tests aimed at enhancing users' knowledge and competencies. It serves as a valuable tool for prospective candidates to prepare for entrance exams and improve their readiness for selection processes.",
+    technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Firebase", "Google OAuth", "BRIVA"],
     image: bc,
     full_image: [bc11, bc12, bc13],
     category: "Web Development",

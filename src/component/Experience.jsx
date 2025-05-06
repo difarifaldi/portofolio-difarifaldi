@@ -5,12 +5,12 @@ const Experience = () => {
     {
       title: "PT. ATLAS KAPITA PERKASA | FULLTIME",
       period: "NOVEMBER 2024 - PRESENT",
-      description: "Developed the Bratacerdas website, designed for tutoring tests provided by the Traffic Corps of the Indonesian National Police (Korlantas Polri) for the general public",
-      skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth", "Google Analytics", "cPanel"],
+      description: "Developed the Bratacerdas website, a platform that offers various test and class packages designed to help prospective candidates prepare for admission into TNI, Polri, and ASN.",
+      skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth", "BRIVA", "Firebase", "cPanel"],
     },
     {
       title: "UNIT PEMJAMINAN MUTU - POLITEKNIK NEGERI JAKARTA | REMOTE",
-      period: "JULY 2024 - PRESENT",
+      period: "JULY 2024 - DECEMBER 2024",
       description: "Designed system mockups, developed the SIAMI system to support internal quality audits at Politeknik Negeri Jakarta, and ensured its maintenance for optimal performance.",
       skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Google OAuth"],
     },
@@ -18,7 +18,7 @@ const Experience = () => {
       title: "FREELANCE",
       period: "JULY 2024 - PRESENT",
       description: "Developed and maintained web-based systems tailored to client needs, ensuring functionality, user-friendly interfaces, and scalability",
-      skills: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery"],
+      skills: ["Laravel", "Codeigniter", "MySQL", "Bootstrap", "Javascript", "jQuery"],
     },
     {
       title: "BADAN PUSAT STATISTIK RI | INTERNSHIP",

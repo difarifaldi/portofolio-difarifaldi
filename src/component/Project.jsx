@@ -58,8 +58,8 @@ const Project = () => {
             <div className="text-white text-sm w-full md:w-1/2 text-justify p-2">
               <h4 className="font-bold">Brata Cerdas</h4>
               <p>
-                Brata Cerdas is a website developed for the Traffic Corps of the Indonesian National Police (Korlantas Polri), designed as a learning platform for prospective and current police officers. The website features classes hosted
-                by instructors and a variety of tests for training purposes.
+                Brata Cerdas is a learning platform developed to support prospective candidates of the Indonesian National Police (Polri), civil service (ASN), and military (TNI). The website features instructor-led classes and a variety of
+                tests for exam preparation and skill development.
               </p>
             </div>
           </div>
