@@ -8,7 +8,7 @@ const Contact = () => {
         <motion.div className="flex flex-col max-w-2xl md:mr-0 sm:mr-6 text-center sm:text-left" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
           <p className="text-white text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Get In Touch</p>
           <p className="text-white">Feel free to reach out! I&apos;m always open to connecting and happy to assist with any inquiries.</p>
-          <div className="flex flex-wrap gap-4 mt-4">
+          <div className="flex flex-wrap gap-4 mt-4 justify-center sm:justify-start">
             {/* Ikon dengan efek hover */}
             <a href="https://www.instagram.com/difa_rifaldi/" target="_blank" rel="noopener noreferrer">
               <div className="bg-gray-500 px-3 py-2 rounded-full text-center text-white hover:bg-violet-900 transition-colors duration-300">
