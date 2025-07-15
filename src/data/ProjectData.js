@@ -14,6 +14,8 @@ import bc from "../assets/img/bc.png";
 import bc11 from "../assets/img/bc11.png";
 import bc12 from "../assets/img/bc12.png";
 import bc13 from "../assets/img/bc13.png";
+import bc14 from "../assets/img/bc14.png";
+import bc15 from "../assets/img/bc17.png";
 import lpg from "../assets/img/lpg.png";
 import lpg11 from "../assets/img/lpg11.png";
 import lpg12 from "../assets/img/lpg12.png";
@@ -26,6 +28,17 @@ import am from "../assets/img/am.png";
 import am11 from "../assets/img/am11.png";
 import am12 from "../assets/img/am12.png";
 import am13 from "../assets/img/am13.png";
+import tur from "../assets/img/tur.png";
+import tur11 from "../assets/img/tur0.jpg";
+import tur12 from "../assets/img/tur1.jpg";
+import tur13 from "../assets/img/tur2.jpg";
+import tur14 from "../assets/img/tur3.jpg";
+import tur15 from "../assets/img/tur4.jpg";
+import ak from "../assets/img/ak.png";
+import ak11 from "../assets/img/ak1.png";
+import ak12 from "../assets/img/ak2.png";
+import ak13 from "../assets/img/ak3.png";
+import ak14 from "../assets/img/ak4.png";
 export const projects = [
   {
     id: 1,
@@ -47,7 +60,7 @@ export const projects = [
       "Brata Cerdas is an educational platform designed to provide a comprehensive learning environment for individuals preparing for careers in the Indonesian National Police, civil service, and the military. The website offers a range of classes led by experienced instructors, along with various types of tests aimed at enhancing users' knowledge and competencies. It serves as a valuable tool for prospective candidates to prepare for entrance exams and improve their readiness for selection processes.",
     technologies: ["Laravel", "MySQL", "Bootstrap", "Javascript", "jQuery", "Firebase", "Google OAuth", "BRIVA"],
     image: bc,
-    full_image: [bc11, bc12, bc13],
+    full_image: [bc11, bc12, bc13, bc14, bc15],
     category: "Web Development",
     year: 2024,
   },
@@ -101,6 +114,30 @@ export const projects = [
   },
   {
     id: 7,
+    title: "e-Turjawali",
+    description: "A mobile application developed to support the activities Turjawali",
+    full_description:
+      "e-Turjawali is a mobile application developed to support regulation, guarding, escorting, and patrolling (Turjawali) activities by members of the Indonesian National Police's Traffic Corps (Korlantas Polri). This application enables officers to digitally report their activities, equipped with features such as location tracking, field documentation uploads, and real-time notifications to the command center. With e-Turjawali, reporting becomes faster, more transparent, and more efficient.",
+    technologies: ["Flutter"],
+    image: tur,
+    full_image: [tur11, tur12, tur13, tur14, tur15],
+    category: "Other",
+    year: 2025,
+  },
+  {
+    id: 8,
+    title: "Financial Accounting",
+    description: "A desktop application designed for recording financial transactions",
+    full_description:
+      "Financial Accounting is a desktop-based application used to record and report financial transactions in a structured manner. The application provides features for recording income and expenses, as well as generating financial reports such as income statements and balance sheets. This system helps simplify the accounting process, reduce recording errors, and accelerate the presentation of financial information.",
+    technologies: ["Node js", "Express js", "Next js", "SQL lite"],
+    image: ak,
+    full_image: [ak11, ak12, ak13, ak14],
+    category: "Other",
+    year: 2025,
+  },
+  {
+    id: 9,
     title: "Predictive Maintenance",
     description: "Conducted machine maintenance predictions on a dataset consisting of 10,000 rows.",
     full_description:

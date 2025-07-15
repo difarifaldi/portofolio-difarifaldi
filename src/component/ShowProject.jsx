@@ -35,14 +35,12 @@ const ShowProject = ({ projects }) => {
           <p className="text-white text-xl text-justify">{project.full_description}</p>
         </motion.div>
       </div>
-      <div className="flex flex-col items-center">
-        {project.full_image.map((image, idx) => {
-          return (
-            <motion.div key={idx} className="w-1/2 md:w-1/2 sm:w-1/3 h-auto my-4 overflow-hidden" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut" }}>
-              <img src={image} alt={`Image ${idx}`} className="w-full border-4 border-gray-400 h-full object-cover" />
-            </motion.div>
-          );
-        })}
+      <div className={`w-full max-w-7xl mx-auto px-4 ${project.id === 7 ? "grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center" : "flex flex-col items-center"}`}>
+        {project.full_image.map((image, idx) => (
+          <motion.div key={idx} className={`my-4 flex justify-center`} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut" }}>
+            <img src={image} alt={`Image ${idx}`} className={` ${project.id === 7 ? "w-full max-w-[300px] aspect-[9/16]" : "border-4 border-gray-400 object-contain w-full max-w-[700px] max-h-[600px]"}`} />
+          </motion.div>
+        ))}
       </div>
     </div>
   );
