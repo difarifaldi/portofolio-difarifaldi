@@ -18,10 +18,13 @@ const Skill = () => {
               PHP <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
-              Java <span className="text-orange-400 font-bold">|</span>
+              Python <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
-              Python <span className="text-orange-400 font-bold">|</span>
+              Javascript <span className="text-orange-400 font-bold">|</span>
+            </div>
+            <div className="m-1">
+              Node JS <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
               VB.Net <span className="text-orange-400 font-bold">|</span>
@@ -39,6 +42,12 @@ const Skill = () => {
               Firebase <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
+              PostgreSQL <span className="text-orange-400 font-bold">|</span>
+            </div>
+            <div className="m-1">
+              SQLite <span className="text-orange-400 font-bold">|</span>
+            </div>
+            <div className="m-1">
               CSS <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
@@ -46,9 +55,6 @@ const Skill = () => {
             </div>
             <div className="m-1">
               Tailwind <span className="text-orange-400 font-bold">|</span>
-            </div>
-            <div className="m-1">
-              Javascript <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
               jQuery <span className="text-orange-400 font-bold">|</span>
@@ -77,7 +83,7 @@ const Skill = () => {
               Jupyter Notebook <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
-              Android Studio <span className="text-orange-400 font-bold">|</span>
+              Postman <span className="text-orange-400 font-bold">|</span>
             </div>
             <div className="m-1">
               Git <span className="text-orange-400 font-bold">|</span>
