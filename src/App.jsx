@@ -22,7 +22,7 @@ function App() {
         {/* Route untuk halaman detail project */}
         <Route path="/detail-project" element={<DetailProject />} />
 
-        <Route path="/project/:id" element={<ShowProject projects={projects} />} />
+        <Route path="/project/:slug" element={<ShowProject projects={projects} />} />
       </Routes>
     </Router>
   );

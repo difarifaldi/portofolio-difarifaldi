@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const ShowProject = ({ projects }) => {
-  const { id } = useParams(); // Ambil ID proyek dari URL
-  const project = projects.find((proj) => proj.id === parseInt(id)); // Mengonversi id menjadi angka
+  const { slug } = useParams(); // Ambil ID proyek dari URL
+  const project = projects.find((proj) => proj.slug === slug);
   useEffect(() => {
     // Menggulirkan halaman ke atas saat komponen Detail dimuat
     window.scrollTo(0, 0);

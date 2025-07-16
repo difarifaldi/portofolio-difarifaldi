@@ -10,8 +10,8 @@ const AllProject = () => {
   // Filter proyek berdasarkan kategori
   const filteredProjects = projects.filter((project) => project.category === selectedCategory);
 
-  const handleProjectClick = (id) => {
-    navigate(`/project/${id}`); // Mengarahkan ke halaman detail proyek
+  const handleProjectClick = (slug) => {
+    navigate(`/project/${slug}`); // ke show Project
   };
 
   return (
@@ -36,7 +36,7 @@ const AllProject = () => {
         transition={{ duration: 1, ease: "easeOut" }} // Durasi animasi
       >
         {filteredProjects.map((project, index) => (
-          <motion.div key={index} className="group relative cursor-pointer flex flex-col  h-full min-h-[300px]" onClick={() => handleProjectClick(project.id)} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+          <motion.div key={index} className="group relative cursor-pointer flex flex-col  h-full min-h-[300px]" onClick={() => handleProjectClick(project.slug)} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
             <div className="relative flex-grow">
               <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
             </div>
